@@ -1,0 +1,484 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet'>
+	<meta charset="utf-8">
+	
+	<title>launch - Startup Landing Page - Documentation</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Pixininja">
+	<meta name="copyright" content="Pixininja">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-04-15T17:18:01+02:00">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+  body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+		html{background-color:#EFEFEF;color:#1C140D;}
+		::-moz-selection{background:#42A5F5;color:#fff;}
+		::selection{background:#42A5F5;color:#fff;}
+		#documenter_sidebar #documenter_logo{background-image:url(img/logo-head.png);}
+		a{color:#42A5F5;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #CBE86B, #889C48);
+			  background-image: -ms-linear-gradient(top, #CBE86B, #889C48);
+			  background-image: -webkit-gradient(linear, 0 0, 0 CBE86B%, from(#F2E9E1), to(#889C48));
+			  background-image: -webkit-linear-gradient(top, #CBE86B, #889C48);
+			  background-image: -o-linear-gradient(top, #CBE86B, #889C48);
+			  background-image: linear-gradient(top, #CBE86B, #889C48);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CBE86B', endColorstr='#889C48', GradientType=0);
+			  border-color: #889C48 #889C48 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #CBE86B #CBE86B #bfbfbf;
+		  background-color: #889C48;
+		}
+		hr{border-top:1px solid #CCCCCC;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#2D2D2D;color:#1C140D;}
+		/* #documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #FFF6ED;-moz-text-shadow:1px 1px 0px #FFF6ED;text-shadow:1px 1px 0px #FFF6ED;} */
+		/* #documenter_sidebar ul{border-top:1px solid #fff;} */
+		#documenter_sidebar ul a{border-top:1px solid #fff;border-bottom:none;color:#fff; font-size: 14px;
+font-weight: 400;}
+    #documenter_nav li:first-child a { border-top: none; }
+		#documenter_sidebar ul a:hover{background: #42A5F5;
+color: #FFFFFF;
+border-top: 1px solid #42A5F5;}
+		#documenter_sidebar ul a.current{background: #64B5F6;
+color: #FFFFFF;
+border-top: 1px solid #64B5F6;
+font-weight: 300;}
+		#documenter_copyright{display:none !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-launch">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#which_code_editor_for_editing_files" title="Which code editor for editing files?">Which code editor for editing files?</a></li>
+			<li><a href="#how_to_change_logo" title="How to change logo?">How to change logo?</a></li>
+
+
+      			<li><a href="#how_to_change_background_image" title="How to change Background image?">How to change Background image?</a></li>
+            <li><a href="#how_to_change_background_video" title="How to change Background video?">How to change Background video?</a></li>
+            <li><a href="#feature-image" title="How to change Feature Image?">How to change Feature Image?</a></li>
+            <li><a href="#how_to_edit_the_counter" title="How to Edit the counter?">How to Edit the counter?</a></li>
+      			<li style="display: none;"><a href="#how_to_change_background_slideshow_images" title="How to change Background slideshow images?">How to change Background slideshow images?</a></li>
+            <li><a href="#how_to_edit_the_map" title="How to Edit the map?">How to Edit the map?</a></li>
+            <li><a href="#how_to_integrate_your_mailchimp_to_subscribe_form" title="How to integrate your mailchimp to subscribe form?">How to integrate your mailchimp to subscribe form?</a></li>
+            <li><a href="#how_to_change_Twitter_feed" title="How to change Twitter feed?">How to change Twitter feed?</a></li>
+          
+       <li><a href="#how_to_change_video_youtube_vimeo" title="How to change video (youtube/vimeo)?">How to change video (youtube/vimeo)?</a></li>     
+			
+
+
+      
+			<li><a href="#how_to_change_social_media" title="How to change social media?">How to change social media?</a></li>
+     
+			<li><a href="#credits" title="Credits">Credits</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Pixininja 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Launch - Startup Landing Page</h1>
+	<h2>Documentation</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	
+	
+	<li>by: Pixininja</li>
+	<li><a href="http://csmthemes.com/themes/launch/">csmthemes.com/themes/launch/</a></li>
+	<li style="display:none;">email: <a href="mailto:&#99;&#115;&#109;&#116;&#104;&#101;&#109;&#101;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#99;&#115;&#109;&#116;&#104;&#101;&#109;&#101;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="which_code_editor_for_editing_files">
+	<div class="page-header"><h3>Which code editor for editing files?</h3><hr class="notop"></div>
+<div>
+	You can use sublime text 3 or brackets for editing the code.</div>
+  <div>
+	&nbsp;</div>
+<div>
+	Download link : http://www.sublimetext.com/3 <br> http://brackets.io/</div>
+</section>
+<section id="how_to_change_logo">
+	<div class="page-header"><h3>How to change logo?</h3><hr class="notop"></div>
+<div>
+	Open the img folder and replace the logo-head.png and logo-nav.png image with your logo. For retina support change the logo-head@2x.png and logo-nav@2x.png, this image should be twice the size of the non retina image.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<img alt="" src="img/logo.jpg"></div>
+<div>
+	&nbsp;</div>
+<div>
+	Open the index.html file in your code editor.&nbsp;</div>
+  <div>
+	&nbsp;</div>
+<div>
+	Go to line no 30 and edit the site description (alt tag ).</div>
+</section>
+
+
+<section id="how_to_change_background_image">
+	<div class="page-header"><h3>How to change Background image?</h3><hr class="notop"></div>
+<p>
+	To change the image go to img folder and replace bg.jpg, bg-pricing.jpg and bg-video-preview.jpg</p>
+<div class="alert alert-info">
+	<p>Tip: Use https://tinypng.com/ to compress your images.</p></div>
+</section>
+<section id="how_to_change_background_video">
+	<div class="page-header"><h3>How to change Background video?</h3><hr class="notop"></div>
+<div>
+	To change the background video go to video folder and replace the 2 videos which are named as vb.mp4 and vb.webm.</div>
+<div>
+	&nbsp;</div>
+<div class="alert alert-info">
+	The the videos are the same but different formats which is requied. To get a video converter visit&nbsp; <br>
+  &nbsp;<br>
+  http://www.mirovideoconverter.com/</div>
+
+  <p>Open the video folder and replace the poster.jpg with a image which is the first frame of the video or with the image of your choice. </p>
+  </section>
+  
+  <section id="feature-image">
+	<div class="page-header"><h3>How to change Feature image?</h3><hr class="notop"></div>
+<p><img src="img/feature-1.png" alt="" width="50%"></p>
+
+<div class="alert alert-info">
+	<p>Important: Feature image sould be 1000x575 for things to work properly</p></div>
+  <div>
+	&nbsp;</div>
+  <div class="alert alert-error"><p>Note: You have to do the step below only if the image dosen't fit properly.</p></div>
+  <p>If you want to use any other image size and the image doesen't fit properly you need to change a few numbers to adjust the image properly. </p>
+  <p>Open main.css which can be found inside css folder. Go to line no 965, you will need to make the changes here</p>
+  
+<p>  <code>.features img {
+  max-width: none;
+  position: absolute;
+  width: 900px;
+  top: 0;
+  left: 22px;
+}</code>
+<br>
+Change width: 900px; and left: 22px;. This represents the two image on the right. Width is for the image's width and left the position left property. max-width: none; makes the image stretch to its full width.
+
+</p>
+
+<p><code>
+.features div[class="row"]:nth-child(2) .col-md-7 img { left: -277px; }</code>
+<br>
+Change left: -277px;. This represents the image on the left. Left is the position left property.
+</p>
+
+  
+  
+
+
+  </section>
+  
+<section id="how_to_edit_the_counter">
+	<div class="page-header"><h3>How to Edit the counter?</h3><hr class="notop"></div>
+  &nbsp;
+<div>
+	Open the main.js file in your code editor.&nbsp;</div>
+  &nbsp;
+<div>
+	<img alt="" src="img/counter.jpg"></div>
+  &nbsp;
+<div>
+	Go to line no 78 and change the numbers to your desired value.</div>
+</section>
+<section id="how_to_change_background_slideshow_images" style="display: none;">
+	<div class="page-header"><h3>How to change Background slideshow images?</h3><hr class="notop"></div>
+<p>
+	To change the images go to img folder and replace the images which are named as bg-1.jpg, bg-2.jpg, bg-3.jpg</p>
+</section>
+<section id="how_to_edit_the_map">
+	<div class="page-header"><h3>How to Edit the map?</h3><hr class="notop"></div>
+<div>
+	Go to js folder and open the gmaps.js file in your code editor.&nbsp;</div>
+  &nbsp;
+<div>
+	<img alt="" src="img/map.jpg"></div>
+  <div>
+	&nbsp;</div>
+<div>
+	change coordinates on line number 1.
+</div>
+&nbsp;
+<div>
+	change zoom on line number 7</div>
+  &nbsp;
+  <div>
+	change address details on line number 18</div>
+   &nbsp;
+<div>
+	change title on line number 35</div>
+  &nbsp;
+<div class="alert alert-info">
+	Map can be found at https://www.google.com/maps/</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="how_to_integrate_your_mailchimp_to_subscribe_form">
+	<div class="page-header"><h3>How to integrate your mailchimp to subscribe form?</h3><hr class="notop"></div>
+<div>
+	Open the main.js file in your code editor.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<img alt="" src="img/form.jpg"></div>
+  <div>
+	&nbsp;</div>
+<div>
+	Go to line <strong>no 12</strong>, changes needs to be made here ::: <strong> http://csmthemes.us3.list-manage.com/subscribe/post?u=9666c25a337f497687875a388&id=5b881a50fb </strong></div>
+
+
+<div>
+	&nbsp;</div>
+<div>
+	You need to change three value<strong> </strong></div>
+<div>
+	<strong>csmthemes.us3</strong></div>
+<div>
+	<strong>u=9666c25a337f497687875a388</strong></div>
+<div>
+	<strong>id=fa41845374</strong></div>
+<div>
+	&nbsp;</div>
+
+
+  
+  <div>
+  <h3>Watch Video Tutorial</h3>
+  <div>
+	&nbsp;</div>
+  <video width="1000" height="700" controls>
+  <source src="assets/mailchimp.mp4" type="video/mp4">
+Your browser does not support the video tag. Download the video from assets folder
+</video>
+  
+  </div>
+</section>
+
+
+
+
+<section id="how_to_change_Twitter_feed">
+	<div class="page-header"><h3>How to change Twitter feed?</h3><hr class="notop"></div>
+<div>
+	<img alt="" src="img/twitter.jpg"></div>
+<div>
+	&nbsp;</div>
+  <h3>Step 1</h3>
+<div>
+	Open the main.js file in your code editor.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Go to line no 34.</div>
+<div>
+	Change envatomarket to your username.</div>
+  <h3>Step 2</h3>
+  
+  <div>
+	<img alt="" src="img/twitter1.jpg"></div>
+  <div>
+	&nbsp;</div>
+  <div>
+	<img alt="" src="img/twitter2.jpg"></div>
+  <div>
+	&nbsp;</div>
+  <div>
+	<img alt="" src="img/twitter3.jpg"></div>
+  
+  <div>
+	&nbsp;</div>
+  <div>
+	First, you need a consumer key and secret keys. Get one from https://dev.twitter.com/apps</div>
+  
+  <div>
+	&nbsp;</div>
+  
+  <div>
+	Edit api/config.php file and replace variables with your Consumer and oAuth Keys.
+
+<pre>    // Consumer Key
+    define('CONSUMER_KEY', 'CONSUMER_KEY_HERE');
+    define('CONSUMER_SECRET', 'CONSUMER_SECRET_HERE');
+
+    // User Access Token
+    define('ACCESS_TOKEN', 'ACCESS_TOKEN_HERE');
+    define('ACCESS_SECRET', 'ACCESS_SECRET_HERE');</pre></div>
+    
+    <div class="alert alert-info">
+	Plugin doc https://github.com/sonnyt/Tweetie</div>
+  <div>
+	&nbsp;</div>
+  <div class="alert alert-error">
+	You need a webhost for this to work.</div>
+    
+</section>
+
+
+
+<section id="how_to_change_video_youtube_vimeo">
+	<div class="page-header"><h3>How to change Video Modal (youtube/vimeo)</h3><hr class="notop"></div>
+<div>
+	Open the index.html file in your code editor.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<img alt="" src="img/video.jpg"></div>
+  <div>
+	&nbsp;</div>
+<div>
+	<img alt="" src="img/video2.jpg"></div>
+<div>
+	&nbsp;</div>
+<div>
+	Go to line on 56 and 184</div>
+  <div>
+	&nbsp;</div>
+<div>
+	For vimeo video change the href=&quot;https://vimeo.com/109054393&quot; to the video of your need. [change&nbsp;</div>
+<div>
+	https://vimeo.com/109054393 ]</div>
+  <div>
+	&nbsp;</div>
+<div>
+	For youtube video change the href=&quot;http://vimeo.com/90536368&quot; to the youtube video of your need.</div>
+        <div>
+	&nbsp;</div>
+    <div class="alert alert-info">
+	Plugin doc http://dimsemenov.com/plugins/magnific-popup/documentation.html</div>
+  <div>
+	&nbsp;</div>
+  <div class="alert alert-error">
+	You need a webhost for this to work.</div>
+</section>
+
+
+<section id="how_to_change_social_media">
+	<div class="page-header"><h3>How to change social media?</h3><hr class="notop"></div>
+  <div>
+	&nbsp;</div>
+<div>
+	<img alt="" src="img/social.jpg"></div>
+  
+<div>
+	&nbsp;</div>
+<div>
+	Open the index.html file in your code editor.</div>
+<div>
+	&nbsp;</div>
+<div>
+	Social media links can be changed on line no 500</div>
+<div>
+	&nbsp;</div>
+<div>
+	Change the value of href { change the # to say https://twitter.com/name } to correspond to the social media name.</div>
+
+
+
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Add more icons if needed (optional)</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	You can add more social media links if needed.</div>
+<div>
+	&nbsp;</div>
+<div>
+	More icons can be found here. http://fortawesome.github.io/Font-Awesome/icons/</div>
+<div>
+	&nbsp;</div>
+<div>
+	Select the icon you need , click on one of them for example linkedin-square http://fortawesome.github.io/Font-Awesome/icon/linkedin-square/&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Add another line of code after line no 473 in index.html , which should look like this&nbsp;, &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</div>
+  <div>
+	&nbsp;</div>
+  <div class="alert alert-error">Check out fortawesome doc for more info http://fortawesome.github.io/Font-Awesome/examples/</div>
+</section>
+
+<section id="credits">
+	<div class="page-header"><h3>Credits</h3><hr class="notop"></div>
+<div>
+	http://getbootstrap.com/customize/?id=1ad32edc475414b4d7d8</div>
+<div>
+	http://freebiesbug.com/psd-freebies/map-pins-markers-psd/</div>
+<div>
+	http://freebiesbug.com/psd-freebies/light-uiux-kit-psd/</div>
+  <div>
+	https://www.iconfinder.com/</div>
+  <div>
+	http://shaboopie.com/free-logo-templates-psd-pg1/</div>
+  <div>
+	http://freebiesbug.com/psd-freebies/dashel-45-free-icons/</div>
+	 <div>
+	http://www.pixeden.com/psd-mock-up-templates/imac-macbook-psd-flat-mockup</div>
+<div>
+	https://github.com/imulus/retinajs</div>
+<div>
+	http://fortawesome.github.io/Font-Awesome/</div>
+  <div>
+	http://www.coverr.co/</div>
+	  <div>
+	https://snazzymaps.com/</div>
+  <div>
+	http://dimsemenov.com/plugins/magnific-popup/</div>
+</section>
+
+	</div>
+</body>
+</html>
