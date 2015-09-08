@@ -135,14 +135,19 @@ $(function() {
         }
     });
 
-    // Scroll for contact us
+    // Scroll for contact us & meet the team
 
-    $(".contact-btn").on("submit", function() {
-    $('html, body').animate({
-        scrollTop: $("#mc-form").offset().top
-    }, 500);
+    $(".contact-btn").on("click", function() {
+        $('html, body').animate({
+            scrollTop: $("#mc-form").offset().top
+        }, 500);
+    });
 
-});
+    $(".cta-btn").on("click", function() {
+        $('html, body').animate({
+            scrollTop: $(".team").offset().top
+        }, 500);
+    });
 
 $('.smbt-buton').on("click", function(){
     var $btn = $(this);
