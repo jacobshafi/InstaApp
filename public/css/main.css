@@ -698,7 +698,7 @@ blockquote cite {
    ========================================================================== */
 
 .twitter-feed {
-  background: url(../img/bg-twitter.jpg) center center no-repeat scroll;
+  background: url(../img/sf.jpg) center center no-repeat scroll;
   background-size: cover;
   position: relative;
 }
@@ -707,11 +707,12 @@ blockquote cite {
 
 .twitter-icon .fa-twitter {
   color: #fff;
+  opacity: 0;
   font-size: 4em;
   padding-bottom: 12px;
 }
 
-.tweet {
+/*.tweet {
   font-size: 20px;
   font-weight: 300;
   color: #fff;
@@ -719,7 +720,7 @@ blockquote cite {
 
 .tweet a { color: #fff; }
 
-.tweet a:hover { color: rgba(255, 255, 255, 0.92); }
+.tweet a:hover { color: rgba(255, 255, 255, 0.92); }*/
 
 /* ==========================================================================
    15.Contact us
