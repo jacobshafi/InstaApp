@@ -150,6 +150,32 @@ $(function() {
     });
 
 $('.smbt-buton').on("click", function(){
+    // isValidEmail: function(email) {
+    //     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    //     return regex.test(email);
+    // },
+    // isValidPhone: function(phone) {
+    //   phone = phone.replace(/[^0-9]/g, '');
+    //   return (phone.length > 3);
+    // },
+    // clearErrors: function() {
+    //   $('#emailAlert').remove();
+    //   $('#feedbackForm .help-block').hide();
+    //   $('#feedbackForm .form-group').removeClass('has-error');
+    // },
+    // clearForm: function() {
+    //   $('.glyphicon-asterisk').css('color', 'black');
+    //   $('#feedbackForm input,textarea').val("");
+    // },
+    // addError: function($input) {
+    //   $input.siblings('.help-block').show();
+    //   $input.parent('.form-group').addClass('has-error');
+    // },
+    // addAjaxMessage: function(msg, isError) {
+    //   window.scrollTo(0, 0);
+    //   $("#message").after('<div id="emailAlert" class="alert alert-' + (isError ? 'danger' : 'success') + '" style="margin-top: 5px;">' + 'Thanks! We will get back to you as soon as possible.' + '</div>');
+    //   setTimeout(function(){window.location = "http://anlegalfirm.com"}, 3000);
+    // };    
     var $btn = $(this);
     $btn.text('loading...');
     var request = $.ajax({

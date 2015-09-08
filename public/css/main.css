@@ -94,7 +94,7 @@ strong { font-weight: 600; }
    ========================================================================== */
 
 .hero-section {
-  background: url(../img/bg.jpg) center center no-repeat scroll;
+  background: url(../img/app-img.jpg) center center no-repeat scroll;
   background-size: cover;
   padding: 0 0 4.5em;
   position: relative;
