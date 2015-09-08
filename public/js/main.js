@@ -153,7 +153,6 @@ $('.smbt-buton').on("click", function(){
         data: $("#mc-form").serialize(),
     });
     request.done(function(response){
-        console.log("success!!")
         $('.col-sm-11').replaceWith('<h2>' + 'Email sent successfully!' + '</h2>');
     });
     request.fail(function(response){
