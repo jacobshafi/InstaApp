@@ -132,6 +132,7 @@ DEPENDENCIES
   byebug
   jbuilder (~> 2.0)
   jquery-rails
+  mail
   pg
   rails (= 4.2.4)
   sass-rails (~> 5.0)
