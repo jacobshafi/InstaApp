@@ -137,7 +137,7 @@ $(function() {
 
     // Scroll for contact us
 
-    $(".contact-btn").on("click", function() {
+    $(".contact-btn").on("submit", function() {
     $('html, body').animate({
         scrollTop: $("#mc-form").offset().top
     }, 500);
@@ -145,17 +145,16 @@ $(function() {
 });
 
 $('.smbt-buton').on("click", function(){
+    var $btn = $(this);
+    $btn.text('loading...');
     var request = $.ajax({
         url: "contact_form",
         type: "POST",
         data: $("#mc-form").serialize(),
-        dataType: "json",
     });
     request.done(function(response){
         console.log("success!!")
-        $('#mc-form').hide();
-        $('col-md-6 center-block col-sm-11').append("Email sent successfully!");
-
+        $('.col-sm-11').replaceWith('<h2>' + 'Email sent successfully!' + '</h2>');
     });
     request.fail(function(response){
         console.log("failure")
