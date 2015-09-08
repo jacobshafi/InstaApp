@@ -60,9 +60,9 @@ $(function() {
    litebox
    ========================================================================== */
 
-    $('.litebox-hero, .litebox-tour').magnificPopup({
-        type: 'iframe'
-    });
+    // $('.litebox-hero, .litebox-tour').magnificPopup({
+    //     type: 'iframe'
+    // });
 
 
     /* ==========================================================================

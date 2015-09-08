@@ -167,6 +167,11 @@ strong { font-weight: 600; }
   font-size: 18px;
 }
 
+.cta-btn{
+  position: relative;
+  margin-top: 10em;
+}
+
 /* ==========================================================================
    3.Navbar
    ========================================================================== */
@@ -269,11 +274,11 @@ transform:translateY(0);
    ========================================================================== */
 
 
-.play-btn { margin: 2.25em 0; }
+/*.play-btn { margin: 2.25em 0; }
 
 .hero-section .play-btn img { transition: opacity 0.3s linear; }
 
-.play-btn img:hover { opacity: .8; }
+.play-btn img:hover { opacity: 0.3; }*/
 
 /* ==========================================================================
    5.Featured on
@@ -878,7 +883,7 @@ blockquote cite {
 
 @media (min-width: 768px) {
 
-.hero-section { padding: 0 0 7.5em; }
+.hero-section { padding: 0 0 5em; }
 
 .welcome-message { margin-top: 8.25em; }
 
@@ -940,7 +945,7 @@ blockquote::before {
 
 @media (min-width: 992px) {
 
-.hero-section { padding: 3em 0 12.75em; }
+.hero-section { padding: 3em 0 10em; }
 
 .navbar-default { background-color: transparent; }
 
