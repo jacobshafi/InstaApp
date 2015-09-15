@@ -1034,3 +1034,11 @@ blockquote::before {
 textarea {
     resize: none;
 }
+
+/*#yufis {
+  margin: auto;
+  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+*/
