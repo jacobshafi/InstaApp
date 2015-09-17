@@ -317,7 +317,7 @@ transform:translateY(0);
 .featured-sites li:last-child { padding-bottom: 0; }
 
 .featured-sites img {
-  opacity: .15;
+  opacity: 1.15;
   transition: all 0.5s linear;
 }
 
