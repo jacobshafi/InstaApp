@@ -169,7 +169,8 @@ strong { font-weight: 600; }
 
 .cta-btn{
   position: relative;
-  margin-top: 10em;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 /* ==========================================================================
@@ -1033,3 +1034,11 @@ blockquote::before {
 textarea {
     resize: none;
 }
+
+/*#yufis {
+  margin: auto;
+  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+*/
