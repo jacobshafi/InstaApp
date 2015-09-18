@@ -793,7 +793,7 @@ blockquote cite {
   color: #4c4c4c;
   box-shadow: none;
   height: 40px;
-  width: 90%;
+  width: 100%;
   font-weight: 400;
   font-size: 16px;
   padding: 0 1.5em;
@@ -807,7 +807,6 @@ blockquote cite {
 
 .sub-form .btn {
   position: relative;
-  right: 1.7em;
   padding: 1em;
 }
 
