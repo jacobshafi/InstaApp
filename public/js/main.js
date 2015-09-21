@@ -14,15 +14,15 @@ $(function() {
     });
 
 
-    $.ajaxChimp.translations.cm = {
-        'submit': 'Submitting...',
-        0: '<i class="fa fa-envelope"></i> Awesome! We have sent you a confirmation email',
-        1: '<i class="fa fa-exclamation-triangle"></i> Please enter a value',
-        2: '<i class="fa fa-exclamation-triangle"></i> An email address must contain a single @',
-        3: '<i class="fa fa-exclamation-triangle"></i> The domain portion of the email address is invalid (the portion after the @: )',
-        4: '<i class="fa fa-exclamation-triangle"></i> The username portion of the email address is invalid (the portion before the @: )',
-        5: '<i class="fa fa-exclamation-triangle"></i> This email address looks fake or invalid. Please enter a real email address'
-    };
+    // $.ajaxChimp.translations.cm = {
+    //     'submit': 'Submitting...',
+    //     0: '<i class="fa fa-envelope"></i> Awesome! We have sent you a confirmation email',
+    //     1: '<i class="fa fa-exclamation-triangle"></i> Please enter a value',
+    //     2: '<i class="fa fa-exclamation-triangle"></i> An email address must contain a single @',
+    //     3: '<i class="fa fa-exclamation-triangle"></i> The domain portion of the email address is invalid (the portion after the @: )',
+    //     4: '<i class="fa fa-exclamation-triangle"></i> The username portion of the email address is invalid (the portion before the @: )',
+    //     5: '<i class="fa fa-exclamation-triangle"></i> This email address looks fake or invalid. Please enter a real email address'
+    // };
 
 
     /* ==========================================================================
@@ -70,19 +70,19 @@ $(function() {
        ========================================================================== */
 
 
-    $('.welcome-message').waypoint(function() {
+    // $('.welcome-message').waypoint(function() {
 
-        var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
+    //     var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
 
-        $('.total-number-1').animateNumber({
-            number: 50, //change value here
-            numberStep: comma_separator_number_step
-        }, 6000);
+    //     $('.total-number-1').animateNumber({
+    //         number: 50, //change value here
+    //         numberStep: comma_separator_number_step
+    //     }, 6000);
 
-    }, {
-        offset: '80%'
+    // }, {
+    //     offset: '80%'
 
-    });
+    // });
 
 
 
@@ -149,64 +149,54 @@ $(function() {
         }, 500);
     });
 
-$('.smbt-buton').on("click", function(){
-    var $btn = $(this);
-    $btn.text('loading...');
-    // clear any errors 
+    $('.smbt-buton').on("click", function(){
+        var $btn = $(this);
+        $btn.text('loading...');
+        // clear any errors
 
-    contactForm.clearErrors();
+        contactForm.clearErrors();
 
-    //do a little client-side validation -- check that each field has a value and e-mail field is in proper format
-    var hasErrors = false;
-      $('#mc-form,textarea').not('.optional').each(function() {
-        if (!$(this).val()) {
-          hasErrors = true;
-          contactForm.addError($(this));
+        //do a little client-side validation -- check that each field has a value and e-mail field is in proper format
+        var hasErrors = false;
+        // $('#mc-form,textarea').not('.optional').each(function() {
+        //     if (!$(this).val()) {
+        //       hasErrors = true;
+        //       contactForm.addError($(this));
+        //     }
+        // });
+        var $email = $('#email');
+        if (!contactForm.isValidEmail($email.val())) {
+            hasErrors = true;
+            contactForm.addError($email);
         }
-    });
-    var $email = $('#email');
-      if (!contactForm.isValidEmail($email.val())) {
-        hasErrors = true;
-        contactForm.addError($email);
-      }
 
-    var $phone = $('#phone');
+        var $phone = $('#phone');
         if (!contactForm.isValidPhone($phone.val())) {
             hasErrors = true;
             contactForm.addError($phone);
-        } 
+        }
 
-        if (hasErrors) {
-            $btn.button('reset');
+        if (hasErrors){
+            $btn.text('Send').append('<i class="fa fa-envelope"></i>');
             return false;
-        }   
-    var request = $.ajax({
-        url: "contact_form",
-        type: "POST",
-        data: $("#mc-form").serialize(),
-    });
-    request.done(function(response){
-        contactForm.addAjaxMessage(response.message, false);
-        $('#captcha').attr('placeholder', response.new_captcha);
-        $('#captcha').val('');
-        $('.col-sm-11').replaceWith('<h2>' + 'Email sent successfully!' + '</h2>');
-        $('.contact-btn').hide()
-    });
-    request.fail(function(response){
-        contactForm.addAjaxMessage(response.responseJSON.message, true);
-        $('#captcha').attr('placeholder', response.responseJSON.new_captcha);
-        $('#captcha').val('');
-        console.log("failure")
-        console.log(response);
-    });
-    request.complete(function() {
-          $btn.button('reset');
+        }
+
+        var request = $.ajax({
+            url: "contact_form",
+            type: "POST",
+            data: $("#mc-form").serialize(),
+        });
+        request.done(function(response){
+            $('.col-sm-11').replaceWith('<h2>' + 'Email sent successfully!' + '</h2>');
+            $('.contact-btn').hide()
+        });
+        request.fail(function(response){
+            console.log("failure")
+            console.log(response);
+        });
     });
 
-
-});
-
-  var contactForm = {
+    var contactForm = {
         isValidEmail: function(email) {
             var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             return regex.test(email);
@@ -232,9 +222,9 @@ $('.smbt-buton').on("click", function(){
         addAjaxMessage: function(msg, isError) {
             window.scrollTo(0, 0);
             $("#message").after('<div id="emailAlert" class="alert alert-' + (isError ? 'danger' : 'success') + '" style="margin-top: 5px;">' + 'Thanks! We will get back to you as soon as possible.' + '</div>');
-            setTimeout(function(){window.location = "http://instaapp.io"}, 3000);
+            setTimeout(function(){window.location = "localhost:3000"}, 3000);
         }
     };
-  });
+});
 
 
