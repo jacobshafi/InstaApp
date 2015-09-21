@@ -153,34 +153,33 @@ $(function() {
         var $btn = $(this);
         $btn.text('loading...');
         // clear any errors
-
         contactForm.clearErrors();
-
         //do a little client-side validation -- check that each field has a value and e-mail field is in proper format
         var hasErrors = false;
-        // $('#mc-form,textarea').not('.optional').each(function() {
-        //     if (!$(this).val()) {
-        //       hasErrors = true;
-        //       contactForm.addError($(this));
-        //     }
-        // });
+        var $name = $('#name');
+        if ($name.val().length === 0){
+            hasErrors = true;
+            contactForm.addError($name);
+        }
         var $email = $('#email');
         if (!contactForm.isValidEmail($email.val())) {
             hasErrors = true;
             contactForm.addError($email);
         }
-
         var $phone = $('#phone');
         if (!contactForm.isValidPhone($phone.val())) {
             hasErrors = true;
             contactForm.addError($phone);
         }
-
+        var $message = $('#message');
+        if ($message.val().length === 0){
+            hasErrors = true;
+            contactForm.addError($message);
+        }
         if (hasErrors){
             $btn.text('Send').append('<i class="fa fa-envelope"></i>');
             return false;
         }
-
         var request = $.ajax({
             url: "contact_form",
             type: "POST",
