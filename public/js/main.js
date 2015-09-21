@@ -150,47 +150,91 @@ $(function() {
     });
 
 $('.smbt-buton').on("click", function(){
-    // isValidEmail: function(email) {
-    //     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    //     return regex.test(email);
-    // },
-    // isValidPhone: function(phone) {
-    //   phone = phone.replace(/[^0-9]/g, '');
-    //   return (phone.length > 3);
-    // },
-    // clearErrors: function() {
-    //   $('#emailAlert').remove();
-    //   $('#feedbackForm .help-block').hide();
-    //   $('#feedbackForm .form-group').removeClass('has-error');
-    // },
-    // clearForm: function() {
-    //   $('.glyphicon-asterisk').css('color', 'black');
-    //   $('#feedbackForm input,textarea').val("");
-    // },
-    // addError: function($input) {
-    //   $input.siblings('.help-block').show();
-    //   $input.parent('.form-group').addClass('has-error');
-    // },
-    // addAjaxMessage: function(msg, isError) {
-    //   window.scrollTo(0, 0);
-    //   $("#message").after('<div id="emailAlert" class="alert alert-' + (isError ? 'danger' : 'success') + '" style="margin-top: 5px;">' + 'Thanks! We will get back to you as soon as possible.' + '</div>');
-    //   setTimeout(function(){window.location = "http://anlegalfirm.com"}, 3000);
-    // };    
     var $btn = $(this);
     $btn.text('loading...');
+    // clear any errors 
+
+    contactForm.clearErrors();
+
+    //do a little client-side validation -- check that each field has a value and e-mail field is in proper format
+    var hasErrors = false;
+      $('#mc-form,textarea').not('.optional').each(function() {
+        if (!$(this).val()) {
+          hasErrors = true;
+          contactForm.addError($(this));
+        }
+    });
+    var $email = $('#email');
+      if (!contactForm.isValidEmail($email.val())) {
+        hasErrors = true;
+        contactForm.addError($email);
+      }
+
+    var $phone = $('#phone');
+        if (!contactForm.isValidPhone($phone.val())) {
+            hasErrors = true;
+            contactForm.addError($phone);
+        } 
+
+        if (hasErrors) {
+            $btn.button('reset');
+            return false;
+        }   
     var request = $.ajax({
         url: "contact_form",
         type: "POST",
         data: $("#mc-form").serialize(),
     });
     request.done(function(response){
+        contactForm.addAjaxMessage(response.message, false);
+        $('#captcha').attr('placeholder', response.new_captcha);
+        $('#captcha').val('');
         $('.col-sm-11').replaceWith('<h2>' + 'Email sent successfully!' + '</h2>');
         $('.contact-btn').hide()
     });
     request.fail(function(response){
+        contactForm.addAjaxMessage(response.responseJSON.message, true);
+        $('#captcha').attr('placeholder', response.responseJSON.new_captcha);
+        $('#captcha').val('');
         console.log("failure")
         console.log(response);
     });
-});
+    request.complete(function() {
+          $btn.button('reset');
+    });
+
 
 });
+
+  var contactForm = {
+        isValidEmail: function(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        },
+
+        isValidPhone: function(phone) {
+            phone = phone.replace(/[^0-9]/g, '');
+            return (phone.length > 3);
+        },
+        clearErrors: function() {
+            $('#emailAlert').remove();
+            $('#mc-form .help-block').hide();
+            $('#mc-form .form-group').removeClass('has-error');
+        },
+        clearForm: function() {
+            $('.glyphicon-asterisk').css('color', 'black');
+            $('#mc-form input,textarea').val("");
+        },
+        addError: function($input) {
+            $input.siblings('.help-block').show();
+            $input.parent('.form-group').addClass('has-error');
+        },
+        addAjaxMessage: function(msg, isError) {
+            window.scrollTo(0, 0);
+            $("#message").after('<div id="emailAlert" class="alert alert-' + (isError ? 'danger' : 'success') + '" style="margin-top: 5px;">' + 'Thanks! We will get back to you as soon as possible.' + '</div>');
+            setTimeout(function(){window.location = "http://instaapp.io"}, 3000);
+        }
+    };
+  });
+
+

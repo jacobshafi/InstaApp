@@ -1034,6 +1034,10 @@ textarea {
     resize: none;
 }
 
+.help-block{
+  display: none;
+}
+
 /*#yufis {
   margin: auto;
   width: 100%;

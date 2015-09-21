@@ -493,18 +493,22 @@
         <div class="form-group">
           <label class="form-label" for="name">Name</label>
           <input type="text" class="form-control" name="name" placeholder="Please enter your full name" required>
+          <span class="help-block">Please enter your name.</span>
         </div>
         <div class="form-group">
           <label class="form-label" for="email">Email</label>
-          <input type="text" class="form-control" name="email" placeholder="johndoe@example.com" required>
+          <input type="text" id="email" class="form-control" name="email" placeholder="johndoe@example.com" required>
+          <span class="help-block">Please enter a valid e-mail address.</span>
         </div>
         <div class="form-group">
           <label class="form-label" for="phone">Phone</label>
-          <input type="text" class="form-control" name="phone" placeholder="xxx-xxxx-xxx" required>
+          <input type="text" id="phone" class="form-control" name="phone" placeholder="xxx-xxxx-xxx" required>
+          <span class="help-block">Please enter a valid phone number. Must be at least six digits long.</span>
         </div>
         <div class="form-group">
           <label class="form-label" for="message">Message</label>
-          <textarea class="form-control" rows="10" cols="100" name="message" required></textarea>
+          <textarea class="form-control" id="message" rows="10" cols="100" name="message" required></textarea>
+          <span class="help-block">Please enter a message.</span>
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-default smbt-buton"> Send <i class="fa fa-envelope"></i> </button>
