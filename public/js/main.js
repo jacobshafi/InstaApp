@@ -210,19 +210,10 @@ $(function() {
             $('#mc-form .help-block').hide();
             $('#mc-form .form-group').removeClass('has-error');
         },
-        clearForm: function() {
-            $('.glyphicon-asterisk').css('color', 'black');
-            $('#mc-form input,textarea').val("");
-        },
         addError: function($input) {
             $input.siblings('.help-block').show();
             $input.parent('.form-group').addClass('has-error');
         },
-        addAjaxMessage: function(msg, isError) {
-            window.scrollTo(0, 0);
-            $("#message").after('<div id="emailAlert" class="alert alert-' + (isError ? 'danger' : 'success') + '" style="margin-top: 5px;">' + 'Thanks! We will get back to you as soon as possible.' + '</div>');
-            setTimeout(function(){window.location = "localhost:3000"}, 3000);
-        }
     };
 });
 
