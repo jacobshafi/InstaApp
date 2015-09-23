@@ -980,12 +980,12 @@ blockquote::before {
 .features img {
   max-width: none;
   position: absolute;
-  width: 900px;
+  width: 700px;
   top: 0;
   left: 22px;
 }
 
-.features div[class="row"]:nth-child(2) .col-md-7 img { left: -277px; }
+.features div[class="row"]:nth-child(2) .col-md-7 img { left: -44px; }
 
 .featured-sites li { padding: 0 3em; }
 
