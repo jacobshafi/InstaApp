@@ -452,7 +452,7 @@ transform:translateY(0);
    ========================================================================== */
 
 .pricing {
-  background: url(../img/bg-pricing.jpg) center center no-repeat scroll;
+  background: url(../img/bg-pricing.png) center center no-repeat scroll;
   background-size: cover;
   position: relative;
 }
