@@ -149,7 +149,8 @@ $(function() {
         }, 500);
     });
 
-    $('.smbt-buton').on("click", function(){
+    $('.smbt-buton').on("click", function(e){
+        e.preventDefault();
         var $btn = $(this);
         $btn.text('loading...');
         // clear any errors
