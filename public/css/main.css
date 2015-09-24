@@ -1045,6 +1045,10 @@ textarea {
     margin-right: 1em;
   }
 
+  .cta-btn{
+    margin-top: 1em;
+  }
+
   .hero-section{
     background-size: 100%;
   }
