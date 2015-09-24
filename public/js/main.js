@@ -7,11 +7,11 @@ $(function() {
 
 
 
-    $('#mc-form').ajaxChimp({
-        language: 'cm',
-        url: 'http://csmthemes.us3.list-manage.com/subscribe/post?u=9666c25a337f497687875a388&id=5b881a50fb'
+    // $('#mc-form').ajaxChimp({
+    //     language: 'cm',
+    //     url: 'http://csmthemes.us3.list-manage.com/subscribe/post?u=9666c25a337f497687875a388&id=5b881a50fb'
             //http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
-    });
+    // });
 
 
     // $.ajaxChimp.translations.cm = {
