@@ -1038,16 +1038,6 @@ textarea {
   .video-tour .play-btn img { width: 45%; }
 }
 
-
-@media (min-width: 300px) {
-  .cta-btn{
-    margin-top: 1em;
-  }
-
-  .hero-section{
-    background-size: 100%;
-  }
-}
 #header-contact-btn{
   position: relative;
   left: 55em;
@@ -1066,6 +1056,11 @@ textarea {
   #cnslt{
     padding-top: 3em;
   }
+
+  .cta-btn{
+    margin-top: 1em;
+  }
+
 }
 
 /*#yufis {
