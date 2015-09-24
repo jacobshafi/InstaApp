@@ -149,7 +149,8 @@ $(function() {
         }, 500);
     });
 
-    $('.smbt-buton').on("click", function(){
+    $('.smbt-buton').on("click", function(e){
+        e.preventDefault();
         var $btn = $(this);
         $btn.text('loading...');
         // clear any errors
@@ -187,10 +188,12 @@ $(function() {
         });
         request.done(function(response){
             $('.col-sm-11').replaceWith('<h2>' + 'Email sent successfully!' + '</h2>');
-            $('.contact-btn').hide()
+            $('.contact-btn').hide();
+            $('.section-spacing-form').css({
+                "padding-bottom":"2em"
+            });
         });
         request.fail(function(response){
-            console.log("failure")
             console.log(response);
         });
     });
