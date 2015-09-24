@@ -1048,21 +1048,25 @@ textarea {
     background-size: 100%;
   }
 }
+#header-contact-btn{
+  position: relative;
+  left: 55em;
+}
 
 @media only screen and (max-device-width: 480px) {
-  .contact-btn{
+  #header-contact-btn{
     float: right;
     padding-left: 1em;
     padding-right: 1em;
     margin-right: 1em;
+    margin-left: none;
+    left: 0em;
+  }
+
+  #cnslt{
+    padding-top: 3em;
   }
 }
-
-#header-contact-btn{
-  vertical-align: middle;
-  margin-left: 55em;
-}
-
 
 /*#yufis {
   margin: auto;
