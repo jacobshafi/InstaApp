@@ -1015,12 +1015,10 @@ blockquote::before {
 .site-footer small { margin: 0; }
 
 .section-spacing.site-footer { padding: 3em 0; }
+
 }
 
 @media (max-width: 460px) {
-  .contact-btn{
-    float: right;
-  }
   .video-tour .play-btn img { width: 45%; }
   }
 
@@ -1039,6 +1037,15 @@ blockquote::before {
     display: none;
   }
 
+}
+
+@media (min-width: 300px) {
+  .contact-btn{
+    float: right;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 1em;
+  }
 }
 
 /*#yufis {
