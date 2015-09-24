@@ -1037,14 +1037,9 @@ textarea {
 @media (max-width: 460px) {
   .video-tour .play-btn img { width: 45%; }
 }
-@media (min-width: 300px) {
-  .contact-btn{
-    float: right;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-right: 1em;
-  }
 
+
+@media (min-width: 300px) {
   .cta-btn{
     margin-top: 1em;
   }
@@ -1054,12 +1049,20 @@ textarea {
   }
 }
 
-.contact-btn{
-  float: none;
-  padding-left: 3em;
-  padding-right: 3em;
-  margin: 0;
+@media only screen and (max-device-width: 480px) {
+  .contact-btn{
+    float: right;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 1em;
+  }
 }
+
+#header-contact-btn{
+  vertical-align: middle;
+  margin-left: 55em;
+}
+
 
 /*#yufis {
   margin: auto;
