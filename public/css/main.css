@@ -1046,6 +1046,8 @@ textarea {
 @media only screen and (max-device-width: 480px) {
   .navbar{
     padding-bottom: 0em;
+    background-color: #202020;
+    background-opacity: 75%;
   }
   #header-contact-btn{
     float: right;
@@ -1068,7 +1070,6 @@ textarea {
   .cta-btn{
     margin-top: 2em;
   }
-
 }
 
 /*#yufis {
