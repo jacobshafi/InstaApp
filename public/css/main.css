@@ -1044,10 +1044,12 @@ textarea {
 }
 
 @media only screen and (max-device-width: 480px) {
+  .navbar{
+    padding-bottom: 0em;
+  }
   #header-contact-btn{
     float: right;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0.5em;
     margin-right: 1em;
     margin-left: none;
     left: 0em;
