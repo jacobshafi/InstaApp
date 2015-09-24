@@ -189,6 +189,9 @@ $(function() {
         request.done(function(response){
             $('.col-sm-11').replaceWith('<h2>' + 'Email sent successfully!' + '</h2>');
             $('.contact-btn').hide();
+            $('.section-spacing-form').css({
+                "padding-top":"0"
+            });
         });
         request.fail(function(response){
             console.log(response);
