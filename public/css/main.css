@@ -980,12 +980,12 @@ blockquote::before {
 .features img {
   max-width: none;
   position: absolute;
-  width: 700px;
+  width: 900px;
   top: 0;
   left: 22px;
 }
 
-.features div[class="row"]:nth-child(2) .col-md-7 img { left: -44px; }
+.features div[class="row"]:nth-child(2) .col-md-7 img { left: -277px; }
 
 .featured-sites li { padding: 0 3em; }
 
@@ -1018,23 +1018,27 @@ blockquote::before {
 }
 
 @media (max-width: 460px) {
+  .contact-btn{
+    float: right;
+  }
+  .video-tour .play-btn img { width: 45%; }
+  }
 
-.video-tour .play-btn img { width: 45%; }
-}
+  .form-label {
+    display: block;
+    float: left;
+    width: 3em;
+    margin-right: 1em;
+  }
 
-.form-label {
-  display: block;
-  float: left;
-  width: 3em;
-  margin-right: 1em;
-}
+  textarea {
+      resize: none;
+  }
 
-textarea {
-    resize: none;
-}
+  .help-block{
+    display: none;
+  }
 
-.help-block{
-  display: none;
 }
 
 /*#yufis {
