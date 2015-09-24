@@ -736,7 +736,7 @@ blockquote cite {
 
 .section-spacing-form {
   padding-top: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 0em;
 }
 
 #map-canvas {
