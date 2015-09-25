@@ -881,12 +881,6 @@ blockquote cite {
    ========================================================================== */
 
 @media (min-width: 768px) {
-
-  .med{
-    width: 70%;
-    margin: auto;
-  }
-
   .hero-section { padding: 0 0 5em; }
 
   .welcome-message { margin-top: 8.25em; }
@@ -1057,7 +1051,13 @@ textarea {
   padding: 0.75em 1.5em;
 }
 
-@media only screen and (max-device-width: 800px){
+@media only screen and (max-device-width: 768px){
+
+  .med{
+    width: 70%;
+    margin: auto;
+  }
+
   .navbar{
     padding-bottom: 0em;
     background-color: #202020;
@@ -1073,6 +1073,11 @@ textarea {
 }
 
 @media only screen and (max-device-width: 480px) {
+
+  .med{
+    width: 100%;
+    margin: 0 0 0 0;
+  }
   .plan{
     margin-top: 3em;
   }
@@ -1107,6 +1112,8 @@ textarea {
 .margin{
   margin-top: 3em;
 }
+
+
 
 /*#yufis {
   margin: auto;
