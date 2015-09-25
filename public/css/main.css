@@ -466,7 +466,6 @@ transform:translateY(0);
 }
 
 .plan {
-  background-color: #fff;
   width: 350px;
   display: inline-block;
   margin: 0 0 1.5em;
@@ -883,6 +882,11 @@ blockquote cite {
 
 @media (min-width: 768px) {
 
+  .med{
+    width: 70%;
+    margin: auto;
+  }
+
   .hero-section { padding: 0 0 5em; }
 
   .welcome-message { margin-top: 8.25em; }
@@ -917,7 +921,7 @@ blockquote cite {
 
   .plan {
     width: 325px;
-    margin: 0 1em 0;
+    margin: 3em 1em 0;
   }
 
   blockquote { padding: 0 0 0 1em; }
@@ -938,6 +942,7 @@ blockquote cite {
     margin-top: 1em;
     padding: 1em 8em;
   }
+
 }
 
 /* ==========================================================================
@@ -1009,7 +1014,7 @@ blockquote cite {
 
   .plan {
     margin: 0 1.5em 0;
-    width: 350px;
+    width: 400px;
   }
 
   blockquote { padding: 0 0 0 3em; }
@@ -1068,6 +1073,9 @@ textarea {
 }
 
 @media only screen and (max-device-width: 480px) {
+  .plan{
+    margin-top: 3em;
+  }
   .navbar{
     padding-bottom: 0em;
     background-color: #202020;
@@ -1094,16 +1102,6 @@ textarea {
   .cta-btn{
     margin-top: 2em;
   }
-}
-
-#pictop{
-  display: inline-flex;
-}
-
-#stub{
-  margin-top: 3em;
-  max-width: none;
-  width: 900px;
 }
 
 .margin{
