@@ -347,7 +347,7 @@ transform:translateY(0);
    7.Features
    ========================================================================== */
 
-.features { overflow-x: hidden; }
+.features{ overflow-x: hidden; }
 
 .features div[class="row"]:nth-child(1),
 .features div[class="row"]:nth-child(2) { margin-bottom: 3em; }
@@ -937,6 +937,9 @@ blockquote cite {
     padding: 1em 8em;
   }
 
+  .features{
+    padding-bottom: 0;
+  }
 }
 
 /* ==========================================================================
@@ -977,6 +980,10 @@ blockquote cite {
   .play-btn { margin: 4.5em 0; }
 
   .section-spacing { padding: 3em 0; }
+
+  .features{
+    padding-bottom: 0;
+  }
 
   .contact.section-spacing { padding: 3em 0 0; }
 
@@ -1069,6 +1076,10 @@ textarea {
     margin-right: 1em;
     margin-left: none;
     left: 0em;
+  }
+
+  .features{
+    padding-bottom: 0;
   }
 }
 
