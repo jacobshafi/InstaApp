@@ -1106,6 +1106,10 @@ textarea {
   width: 900px;
 }
 
+.margin{
+  margin-top: 3em;
+}
+
 /*#yufis {
   margin: auto;
   width: 100%;
