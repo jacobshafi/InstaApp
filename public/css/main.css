@@ -185,6 +185,29 @@ strong { font-weight: 600; }
   padding: .75em 0;
 }
 
+.navbar-header{
+  width: 100%;
+}
+.nav{
+  height: 80px;
+  position:absolute;
+  position: relative;
+  text-align: center;
+}
+
+.navbar-brand{
+  position: relative;
+  top: 33%;
+  transform: translateY(-50%);
+}
+
+#header-contact-btn{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
 .nav > li { text-align: center; }
 
 .nav > li > a > i { padding-right: .2em; }
@@ -1048,23 +1071,33 @@ textarea {
   display: none;
 }
 
-@media (max-width: 460px) {
+.logo-nav{
+  width: 150px;
+}
+.logo-head{
+  width: 150px;
+}
+
+
+@media  only screen and (max-width: 460px) {
   .video-tour .play-btn img { width: 45%; }
 }
 
 #header-contact-btn{
-  position: relative;
-  left: 55em;
+  float: right;
   padding: 0.75em 1.5em;
 }
 
 @media only screen and (max-device-width: 768px){
-
   .med{
     width: 70%;
     margin: auto;
   }
-
+  .navbar-brand{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   .navbar{
     padding-bottom: 0em;
     background-color: #202020;
@@ -1073,9 +1106,11 @@ textarea {
   #header-contact-btn{
     float: right;
     padding: 0.5em;
-    margin-right: 1em;
     margin-left: none;
     left: 0em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .features{
@@ -1084,7 +1119,17 @@ textarea {
 }
 
 @media only screen and (max-device-width: 480px) {
-
+  .logo-nav{
+    width: 95px;
+  }
+  .logo-head{
+    width: 95px;
+  }
+  .navbar-brand{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   .med{
     width: 100%;
     margin: 0 0 0 0;
@@ -1100,9 +1145,11 @@ textarea {
   #header-contact-btn{
     float: right;
     padding: 0.5em;
-    margin-right: 1em;
     margin-left: none;
     left: 0em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .form-label {
